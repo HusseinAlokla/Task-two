@@ -16,36 +16,28 @@
   }
 }
 
-/*body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}*/
-*{
+* {
   margin: 0;
   padding: 0;
 }
-h4{
+
+h4 {
   margin: 5px;
 }
-.blue-div{
+
+.blue-div {
   background-color: rgb(30, 68, 149);
   min-width: fit-content;
   display: flex;
   min-height: 500px;
 }
-.child-blue-div{
-  width: 35%;
-  
- 
-  
+
+.child-blue-div {
+  width: 45%;
   text-align: left;
 }
-.General-width{
+
+.General-width {
   width: 280px;
 }
 
@@ -54,22 +46,174 @@ h4{
   padding: 10px;
 }
 
-@media (max-width: 768px) {
-  .left-div {
-      margin-left: 10px; /* Adjust for smaller screens */
-  }
-  .right-div{
-    margin-left: 10px;
-  }
-}
-.right-div{
+.right-div {
   margin-left: 20px; /* Adjust the value as needed to move components to the right */
   padding: 10px;
 }
-.Gray-headphone{
+
+.Gray-headphone {
   display: inline-block;
   transform: scaleY(1.2);
-  
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .left-div {
+    margin-left: 10px; /* Adjust for smaller screens */
+  }
+  .right-div {
+    margin-left: 10px; /* Adjust for smaller screens */
+  }
+  .General-width {
+    width: 100%; /* Make it full width on smaller screens */
+  }
+}
+
+.Twoheads {
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  gap: 15px;
 }
 
 
+@media (max-width: 768px) {
+  .Twoheads {
+    flex-direction: column; 
+    align-items: center; 
+  }
+}
+/* Example CSS using media queries */
+.desktop-features {
+  display: block; /* Display on desktop by default */
+}
+
+.mobile-drawer-button {
+  display: none; /* Hide on desktop by default */
+}
+
+@media (max-width: 768px) {
+  .desktop-features {
+    display: none; /* Hide on mobile screens */
+  }
+
+  .mobile-drawer-button {
+    display: block; /* Display on mobile screens */
+  }
+
+  .mobile-drawer {
+    /* Define styles for the mobile drawer here */
+    display: block;
+  }
+}
+.Three-heads{
+  transform: rotateY(75deg);
+
+  
+}
+
+.Three-heads1{
+  transform: rotateY(40deg);
+  
+  
+}
+.treeheads{
+  display: flex;
+  align-items: center;
+}
+.square {
+  width: 15px;
+  height: 15px;
+  cursor: pointer; /* Change the cursor to a pointer to indicate it's clickable */
+  margin: 2px;
+}
+
+.filled {
+  background-color: rgb(230, 142, 9); /* Change the background color when the square is filled */
+}
+.fontsi{
+ font-size: xx-small;
+ text-align: center;
+ color: rgb(165, 181, 175);
+  
+}
+
+.subscribeForm input[type="email"] {
+  border: 1px solid rgb(186, 182, 182);
+  width: 100%;
+  padding: 10px;
+}
+
+
+@media (max-width: 1024px) {
+  .subscribeForm {
+    
+    padding: 10px;
+    
+    
+  }
+
+  .subscribeForm input[type="email"] {
+    margin-bottom: 10px;
+    
+  }
+}
+@media (max-width: 768px) {
+  .subscribeForm {
+    max-width: 100%; 
+    padding: 10px; 
+  }
+
+  .subscribeForm input[type="email"] {
+    margin-bottom: 10px;
+    max-width: 100%; 
+  }
+}
+
+
+@media (max-width: 480px) {
+  
+  .subscribeForm {
+    max-width: 100%; 
+    padding: 10px; 
+  }
+
+  .subscribeForm input[type="email"] {
+    margin-bottom: 10px;
+    width: 100%; 
+  }
+}
+
+.subscribeForm button {
+  background-color: hsl(22, 90%, 44%); 
+  color: #fff; /* Set text color to white */
+  padding: 10px 20px; /* Add padding to the button */
+  border: none; /* Remove the button border */
+  cursor: pointer; 
+ 
+}
+@media (min-width: 768px) {
+  .subscribeForm button {
+    padding: 6px 14px;
+    height: 45px; 
+  }
+}
+
+.subscribeForm-container {
+  max-width: 300px;
+  margin: 0 auto;
+
+}
+@media (max-width: 768px) {
+  .subscribeForm-container {
+    max-width: 100%; 
+  }
+}
+
+
+@media (min-width: 1024px) {
+  .subscribeForm-container {
+    max-width: 600px; 
+  }
+}

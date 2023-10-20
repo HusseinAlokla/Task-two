@@ -1,20 +1,19 @@
 import React from 'react';
 import MyComponent from './GrayHeadphone';
-import LeftDiv from './left-div';
-const HalfScreenDiv = () => {
-  const divStyle = {
-    height: '90vh', // 50% of the viewport height
-    backgroundColor: 'white', // You can set the background color
-  };
 
+const HalfScreenDiv = () => {
   return (
-    <div className="half-screen" style={divStyle}>
-        <div class='mt-12'><h1 class='text-4xl font-bold text-center'>Technology Keeps Moving Forward</h1>
-        <h6 class = 'text-sm text-gray-500 text-center  '>Excepteur sint occaecat cupidatat non proident, sunt oin cupla qui offici</h6>
-        </div>
-        
+    <div className="half-screen min-w-full">
+      <div className="bg-white p-4 md:p-8 text-center">
+        <h1 className="text-2xl md:text-4xl font-bold">
+          Technology Keeps Moving Forward
+        </h1>
+        <h6 className="text-sm md:text-base text-gray-500 mt-2">
+          Excepteur sint occaecat cupidatat non proident, sunt oin cupla qui offici
+        </h6>
+      </div>
+
       <MyComponent />
-     
     </div>
   );
 };

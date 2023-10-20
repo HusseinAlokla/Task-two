@@ -6,7 +6,9 @@ function RightDiv(){
     return(
         <div className='right-div'>
             <Sound />
+            <br />
             <Layer />
+            <br />
             <Headset />
 
 
