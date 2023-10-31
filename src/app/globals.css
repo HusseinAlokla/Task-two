@@ -29,17 +29,14 @@ h4 {
   background-color: rgb(30, 68, 149);
   min-width: fit-content;
   display: flex;
-  min-height: 500px;
 }
 
 .child-blue-div {
-  width: 45%;
+  
   text-align: left;
 }
 
-.General-width {
-  width: 280px;
-}
+
 
 .left-div {
   margin-left: 20px; /* Adjust the value as needed to move components to the right */
@@ -53,7 +50,7 @@ h4 {
 
 .Gray-headphone {
   display: inline-block;
-  transform: scaleY(1.2);
+
 }
 
 /* Responsive Styles */
@@ -70,7 +67,7 @@ h4 {
 }
 
 .Twoheads {
-  min-height: 80vh;
+  
   display: flex;
   justify-content: center;
   padding: 20px;
@@ -107,17 +104,8 @@ h4 {
     display: block;
   }
 }
-.Three-heads{
-  transform: rotateY(75deg);
 
-  
-}
 
-.Three-heads1{
-  transform: rotateY(40deg);
-  
-  
-}
 .treeheads{
   display: flex;
   align-items: center;
@@ -216,4 +204,38 @@ h4 {
   .subscribeForm-container {
     max-width: 600px; 
   }
+}
+
+.drawer {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  top: 0;
+  right: -250px; /* Start off-screen */
+  background-color: #0917b4;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.drawer.open {
+  width: 200px; /* Slide in the drawer */
+  left: 0;
+}
+
+.drawer button {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 30px;
+  color: white;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.drawer a {
+  display: block;
+  padding: 20px;
+  color: white;
+  text-decoration: none;
 }

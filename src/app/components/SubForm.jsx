@@ -13,7 +13,7 @@ function SubForm(){
     };
     return (
         <form className = "subscribeForm" onSubmit={handleSubmit}>
-         <div class = 'flex lg:w-max sm:max-w md:max-w-md    '>
+         <div class = 'flex lg:w-max sm:max-w md:max-w'>
             
           <input
             type="email"
@@ -22,7 +22,7 @@ function SubForm(){
             onChange={handleEmailChange}
             
           />
-          <button type="submit" >Subscribe</button>
+          <button type="submit" class = ''>Subscribe</button>
       </div>  </form>
         
       );

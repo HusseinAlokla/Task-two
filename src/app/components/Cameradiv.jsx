@@ -1,20 +1,15 @@
 import React from "react";
 import {FiCamera} from "react-icons/fi"
 import {TiCameraOutline} from "react-icons/ti"
-import {RiCamera2Line} from "react-icons/ri"
 import {GiVideoCamera} from "react-icons/gi"
 import {TbCameraBolt} from "react-icons/tb"
 import {FaCameraRetro} from "react-icons/fa"
 import {SlCamera} from "react-icons/sl"
 
 function CamDiv(){
-    const divStyle = {
-          
-        height: '30vh', // 70% of the viewport height
-        
-      };
+
 return(
-    <div class = 'flex bg-gray-200 lg:min-w-screen sm:min-w-screen  items-center justify-center gap-3' style={divStyle}>
+    <div class = 'flex bg-gray-200 lg:max-w-full sm:max-w-full items-center justify-center gap-2 pt-2 pb-5 flex-wrap'>
 
         <div> <FiCamera size={60} color="gray"/> 
         <h4 class= 'text-sm font-bold underline text-gray-400'>PHOTO CLUB</h4>

@@ -1,7 +1,7 @@
 import {TfiHeadphone} from "react-icons/tfi"
 function Threeheads(){
     return(
-        <div> <TfiHeadphone size = {300} color="gray"/></div>
+        <div> <TfiHeadphone size = {200} color="gray"/></div>
 
 
 

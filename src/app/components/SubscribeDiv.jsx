@@ -2,13 +2,8 @@
 import React from 'react';
 import SubForm from './SubForm';
 function SubDiv(){
-    const divStyle = {
-        // You can adjust the inline style as needed
-        height: '45vh',
-     
-      };
     return(
-        <div class = 'flex flex-col items-center  min-w-full justify-center' style={divStyle}>
+        <div class = 'flex flex-col items-center  min-w-full justify-center pb-4 pt-4'>
     
         
 <h1 class = 'text-2xl font-bold' >Subscribe To Our Newsletter</h1>

@@ -20,20 +20,16 @@ const HomePage = () => {
     <div>
       <header className="bg-white text-black p-4">
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <div className="mx-auto flex flex-col md:flex-row items-center justify-between max-w-screen-lg">
+        <div className="mx-auto flex flex-col md:flex-row items-center justify-between max-w-screen-lg sm:flex-col">
           <div className="flex items-center space-x-4">
             <MyHeadphone className="text-3xl md:text-4xl lg:text-2xl" />
             <h4 className="text-3xl md:text-4xl lg:text-2xl font-bold">
               Esportas
             </h4>
           </div>
-          <div class = 'flex justify-end'><Header /></div>
-          
-
-
-  
+          <div class = 'flex'><Header /></div>  
           <div>
-            <JoinButton className="mt-4 md:mt-0" />
+            <JoinButton/>
           </div>
         </div>
       </header>

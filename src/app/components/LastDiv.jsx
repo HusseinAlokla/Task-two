@@ -3,14 +3,9 @@ import {GiHeadphones} from "react-icons/gi"
 import { BiStopCircle } from "react-icons/bi";
 import {AiOutlineCopyrightCircle} from "react-icons/ai"
 function LastDiv(){
-    const divStyle = {
-        // You can adjust the inline style as needed
-        height: '50vh',
-     
-      };
     return(
 
-        <div style={divStyle} class = 'flex flex-col bg-gray-200 justify-center items-center lg:min-w-screen sm:min-w-screen sm:h-7'> <GiHeadphones color="#FF4D1C" size={32}/>
+        <div class = 'flex flex-col bg-gray-200 justify-center items-center lg:min-w-screen pb-5 sm:min-w-screen pt-4'> <GiHeadphones color="#FF4D1C" size={32}/>
         <br />
         <h1 class = 'text-3xl font-bold'>KRADO</h1> 
         <br />
